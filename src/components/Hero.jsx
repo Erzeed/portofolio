@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import ReactTyped from "react-typed";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 
@@ -16,7 +16,15 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Feizal Reza</span>
+            Hi, I'm <span className='text-[#915EFF]'>
+              <ReactTyped 
+                strings={["Front-End Developer", "Feizal Reza"]} 
+                typeSpeed={170}
+                loop
+                cursorChar=";"
+                showCursor={true}
+                />
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop 3D visuals, user <br className='sm:block hidden' />
