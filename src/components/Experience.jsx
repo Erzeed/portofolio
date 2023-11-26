@@ -59,15 +59,23 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <div>
+      <motion.div 
+        variants={textVariant()}
+        >
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
-        </h2>
       </motion.div>
+        <motion.h2 
+          variants={textVariant()}
+          className={`${styles.sectionHeadText} text-center`}
+          data-cursor-color="rgb(255,255,25)" 
+          data-cursor-size="150px"
+          data-cursor-exclusion
+          >
+          Work Experience.
+        </motion.h2>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
@@ -79,7 +87,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

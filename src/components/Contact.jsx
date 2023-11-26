@@ -115,12 +115,17 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div>
+            <button
+              type='submit'
+              className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+              data-cursor-color="rgb(255,255,25)" 
+              data-cursor-size="80px"
+              data-cursor-exclusion 
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </div>
         </form>
       </motion.div>
 

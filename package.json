@@ -16,6 +16,7 @@
     "framer-motion": "^10.16.5",
     "maath": "^0.10.4",
     "react": "^18.2.0",
+    "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
     "react-tilt": "^1.0.2",

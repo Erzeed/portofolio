@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion } from 'framer-motion';
+import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 
-const Cursor = () => {
+const Customcursor = () => {
     const [mouseOver, setMouseOver] = useState({
         x: null,
         y: null
@@ -32,14 +34,17 @@ const Cursor = () => {
     }
 
     return (
-        <motion.div  
-            className="w-5 h-5 rounded-full bg-slate-400 absolute top-0 left-0"
-            style={{
-                translateX: variants.default.x,
-                translateY: variants.default.y
-            }}
-        />
+        // <motion.div  
+        //     className="w-5 h-5 rounded-full bg-slate-400 absolute top-0 left-0"
+        //     style={{
+        //         translateX: variants.default.x,
+        //         translateY: variants.default.y
+        //     }}
+        // />
+        <>
+            <Cursor isGelly={true} cursorSize={25} cursorBackgrounColor="#fff" />
+        </>
     )
 }
 
-export default Cursor;
+export default Customcursor;

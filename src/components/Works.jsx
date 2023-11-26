@@ -18,7 +18,9 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    data-cursor-color="rgb(255,255,25)"
+    >
       <Tilt
         options={{
           max: 45,
@@ -27,11 +29,13 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px]'
+          data-cursor-color="rgb(255,255,25)"
+        >
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-cover rounded-2xl' 
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -43,6 +47,9 @@ const ProjectCard = ({
                 src={github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
+                data-cursor-color="rgb(255,255,25)" 
+                data-cursor-size="60px"
+                data-cursor-exclusion
               />
             </div>
           </div>
@@ -80,6 +87,9 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          data-cursor-color="rgb(255,255,25)" 
+          data-cursor-size="100px"
+          data-cursor-exclusion
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

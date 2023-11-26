@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>
+            Hi, I'm <span className='text-[rgb(255,255,25)]'>
               <ReactTyped 
                 strings={["Front-End Developer", "Feizal Reza"]} 
                 typeSpeed={170}

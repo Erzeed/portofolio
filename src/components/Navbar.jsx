@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+// import { Cursor } from 'react-creative-cursor';
+import 'react-creative-cursor/dist/styles.css';
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -32,7 +34,8 @@ const Navbar = () => {
       } w-full h-13 flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
-    >
+    > 
+    {/* <Cursor isGelly={false} /> */}
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -54,7 +57,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a data-cursor-exclusion data-cursor-color="rgb(255,255,25)" data-cursor-size="70px" href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>

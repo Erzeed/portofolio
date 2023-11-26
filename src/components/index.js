@@ -6,7 +6,7 @@ import Tech from './Tech';
 import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
-import Cursor from './cursor';
+import Customcursor from './cursor';
 
 export {
   Hero,
@@ -20,5 +20,5 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Cursor
+  Customcursor
 }

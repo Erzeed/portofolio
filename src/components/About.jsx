@@ -3,7 +3,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../style";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -11,10 +10,11 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
+    
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
+    > 
       <div
         options={{
           max: 45,
@@ -39,15 +39,18 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p  className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        data-cursor-exclusion
+        data-cursor-color="rgb(255,255,25)" 
+        data-cursor-size="100px" 
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
@@ -61,7 +64,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
