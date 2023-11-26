@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
@@ -52,9 +53,8 @@ const About = () => {
         data-cursor-color="rgb(255,255,25)" 
         data-cursor-size="100px" 
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        I'm a skilled software developer with JavaScript, Php, mySql and mongoDb. 
+        I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>

@@ -17,18 +17,17 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[rgb(255,255,25)]'>
-              <ReactTyped 
-                strings={["Front-End Developer", "Feizal Reza"]} 
-                typeSpeed={170}
-                loop
-                cursorChar=";"
-                showCursor={true}
-                />
+              Feizal Reza
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            <ReactTyped 
+              strings={["I develop user interfaces and", "web applications"]} 
+              typeSpeed={170}
+              loop
+              cursorChar=";"
+              showCursor={true}
+              />
           </p>
         </div>
       </div>
