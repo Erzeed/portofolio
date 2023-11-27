@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ReactTyped from "react-typed";
 import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center'>
         <a href='#about'>
