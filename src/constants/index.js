@@ -1,7 +1,7 @@
 import {
-    mobile,
+    // mobile,
     backend,
-    creator,
+    // creator,
     web,
     javascript,
     html,
@@ -43,18 +43,18 @@ import {
       title: "Web Developer",
       icon: web,
     },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
+    // {
+    //   title: "React Native Developer",
+    //   icon: mobile,
+    // },
     {
       title: "Backend Developer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    // {
+    //   title: "Content Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
