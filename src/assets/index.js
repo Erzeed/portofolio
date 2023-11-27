@@ -25,7 +25,7 @@ import kampus from "./company/kampus.png";
 import telkom from "./company/telkom.png"
 
 import discuss from "./discuss.png";
-import wgether from "./wgether.png";
+import wgether from "./wgther.png";
 import notes from "./notes.png";
 import burjo from "./burjo.png";
 
