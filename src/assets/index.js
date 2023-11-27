@@ -8,7 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -18,17 +17,17 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import php from "./tech/php.png";
+import mysql from "./tech/mysql.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import kampus from "./company/kampus.png";
+import telkom from "./company/telkom.png"
+
+import discuss from "./discuss.png";
+import wgether from "./wgether.png";
+import notes from "./notes.png";
+import burjo from "./burjo.png";
 
 export {
   logo,
@@ -40,7 +39,6 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -50,13 +48,12 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  discuss,
+  wgether,
+  notes,
+  kampus,
+  telkom,
+  php,
+  mysql,
+  burjo
 };

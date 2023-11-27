@@ -74,7 +74,7 @@ const Experience = () => {
           data-cursor-size="150px"
           data-cursor-exclusion
           >
-          Work Experience.
+          {" < Experience />"}
         </motion.h2>
 
       <div className='mt-20 flex flex-col'>

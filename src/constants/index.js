@@ -13,14 +13,14 @@ import {
     mongodb,
     git,
     figma,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    discuss,
+    wgether,
+    notes,
+    kampus,
+    telkom,
+    php,
+    mysql,
+    burjo
   } from "../assets";
   
   export const navLinks = [
@@ -91,10 +91,6 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -102,118 +98,112 @@ import {
       name: "figma",
       icon: figma,
     },
+    {
+      name: "php",
+      icon: php,
+    },
+    {
+      name: "mysql",
+      icon: mysql,
+    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Intern Divisi Enterprise Service",
+      company_name: "PT TELEKOMUNIKASI INDONESIA",
+      icon: telkom,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March - July 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Memverifikasi tagihan yang masuk dari mitra/anak perusahaan telkom.",
+        "Memproses PR/Purchase Requisition",
+        "Menjadi admin dari aplikasi invidia telkom",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "SIB X Dicoding - Front-End Web and React",
+      company_name: "KAMPUS MERDEKA ANGKATAN 3",
+      icon: kampus,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Augus - Dec 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Belajar Fundamental Aplikasi Web dengan React",
+        "Menjadi Front-End Web Developer Expert",
+        "Capstone/FinalProject",
+        "Soft skill & Career Development",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    }
   ];
   
 
   const projects = [
     {
-      name: "Car Rent",
+      name: "Discuss App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "web-based application created using React JS and React Redux and Cypress as testing methods.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "react-redux",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "cypress",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: discuss,
+      source_code_link: "https://github.com/Erzeed/discuss-app",
     },
     {
-      name: "Job IT",
+      name: "Wgether",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "web-based applications created using webpack, firebase. This application is used for thesis guidance media where there is a notification feature, creating guidance reports in PDF form and implementing PWA so that it can be installed on smartphones.",
       tags: [
         {
-          name: "react",
+          name: "Webpack",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "PWA",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: wgether,
+      source_code_link: "https://github.com/Erzeed/task_management",
     },
     {
-      name: "Trip Guide",
+      name: "Notes App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "web-based application created by react js. In this application there are features to change themes, change languages and add and delete notes.",
       tags: [
         {
-          name: "nextjs",
+          name: "React js",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: notes,
+      source_code_link: "https://github.com/Erzeed/notesapp",
+    },
+    {
+      name: "Restaurant App",
+      description:
+        "web-based applications created by webpack, codeceptjs, karma and puppeteer. This application has a feature to display a list of restaurants.",
+      tags: [
+        {
+          name: "Webpack",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "e2e testing",
           color: "green-text-gradient",
         },
         {
@@ -221,8 +211,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: burjo,
+      source_code_link: "https://github.com/Erzeed/burjo",
     },
   ];
   
