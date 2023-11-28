@@ -1,9 +1,33 @@
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import ReactTyped from "react-typed";
 import { styles } from "../style";
 // import { ComputersCanvas } from "./canvas";
+import { lottie } from "../assets";
 
 const Hero = () => {
+  const [lotti, setLottie] = useState();
+  const lottieRef = useRef(null);
+
+  useEffect(() => {
+    import("lottie-web").then((Lottie) => setLottie(Lottie.default));
+  }, []);
+
+  useEffect(() => {
+    if (lotti && lottieRef.current) {
+      const animation = lotti.loadAnimation({
+        container: lottieRef.current,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        // eslint-disable-next-line no-undef
+        animationData: lottie,
+      });
+
+      return () => animation.destroy();
+    }
+  }, [lotti])
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -32,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      <div className="absolute invisible w-5/12 bottom-1.5 lg:visible lg:right-6 2xl:right-8" ref={lottieRef}></div>
 
       <div className='absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center'>
         <a href='#about'>

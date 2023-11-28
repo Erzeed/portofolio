@@ -20,6 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import php from "./tech/php.png";
 import mysql from "./tech/mysql.png";
 
+import lottie from "./lottie.json";
 
 import kampus from "./company/kampus.png";
 import telkom from "./company/telkom.png"
@@ -53,5 +54,6 @@ export {
   telkom,
   php,
   mysql,
-  burjo
+  burjo,
+  lottie
 };
