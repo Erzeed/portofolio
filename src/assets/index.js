@@ -21,6 +21,7 @@ import php from "./tech/php.png";
 import mysql from "./tech/mysql.png";
 
 import lottie from "./lottie.json";
+import loading from "./loading.json";
 
 import kampus from "./company/kampus.png";
 import telkom from "./company/telkom.png"
@@ -55,5 +56,6 @@ export {
   php,
   mysql,
   burjo,
-  lottie
+  lottie,
+  loading
 };

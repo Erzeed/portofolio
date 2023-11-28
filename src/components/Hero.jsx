@@ -7,8 +7,9 @@ import { lottie } from "../assets";
 
 const Hero = () => {
   const [lotti, setLottie] = useState();
+  const [isMobile, setIsMobile] = useState(false);
   const lottieRef = useRef(null);
-
+  //001f3f
   useEffect(() => {
     import("lottie-web").then((Lottie) => setLottie(Lottie.default));
   }, []);
@@ -20,13 +21,33 @@ const Hero = () => {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        // eslint-disable-next-line no-undef
         animationData: lottie,
       });
 
       return () => animation.destroy();
     }
   }, [lotti])
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -56,7 +77,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute invisible w-5/12 bottom-1.5 lg:visible lg:right-6 2xl:right-8" ref={lottieRef}></div>
+      <div className={
+        isMobile ? "absolute m-auto left-0 right-0 bottom-20 w-7/12" : "absolute right-0 bottom-0 w-5/12"
+      } ref={lottieRef}></div>
 
       <div className='absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center'>
         <a href='#about'>
