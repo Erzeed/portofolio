@@ -78,7 +78,7 @@ const Hero = () => {
       </div>
 
       <div className={
-        isMobile ? "absolute m-auto left-0 right-0 bottom-20 w-7/12" : "absolute right-0 bottom-0 w-5/12"
+        isMobile ? "absolute m-auto left-0 right-0 bottom-20 w-8/12" : "absolute right-0 bottom-0 w-5/12"
       } ref={lottieRef}></div>
 
       <div className='absolute xs:bottom-5 bottom-20 w-full flex justify-center items-center'>
