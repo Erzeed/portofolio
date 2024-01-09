@@ -18,8 +18,8 @@ const App = () => {
       ) :(
         <>
           <Cursor isGelly={true} cursorSize={20} cursorBackgrounColor="#fff" />
-          <div className='relative z-0 bg-primary'>
-            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <div className='relative z-0 bg-primary scroll-smooth'>
+            <div className='bg-black'>
               <Navbar />
               <Hero />
             </div>

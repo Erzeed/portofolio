@@ -20,7 +20,8 @@ import {
     telkom,
     php,
     mysql,
-    burjo
+    burjo,
+    ytclone
   } from "../assets";
   
   export const navLinks = [
@@ -139,6 +140,19 @@ import {
 
   const projects = [
     {
+      name: "Yt-clone",
+      description:
+        "web-based applications created using react Js, Tailwind, RapidApi",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ytclone,
+      source_code_link: "https://github.com/Erzeed/Yt-clone",
+    },
+    {
       name: "Discuss App",
       description:
         "web-based application created using React JS and React Redux and Cypress as testing methods.",
@@ -162,7 +176,7 @@ import {
     {
       name: "Wgether",
       description:
-        "web-based applications created using webpack, firebase. This application is used for thesis guidance media where there is a notification feature, creating guidance reports in PDF form and implementing PWA so that it can be installed on smartphones.",
+        "web-based applications created using webpack, firebase. This application is used for thesis guidance ",
       tags: [
         {
           name: "Webpack",

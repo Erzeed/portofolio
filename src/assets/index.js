@@ -30,6 +30,7 @@ import discuss from "./discuss.png";
 import wgether from "./wgther.png";
 import notes from "./notes.png";
 import burjo from "./burjo.png";
+import ytclone from "./ytclone.png";
 
 export {
   logo,
@@ -57,5 +58,6 @@ export {
   mysql,
   burjo,
   lottie,
-  loading
+  loading,
+  ytclone
 };
