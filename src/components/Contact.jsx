@@ -29,39 +29,46 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+    const { name, email, message} = form
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Feizal Reza",
-          from_email: form.email,
-          to_email: "feizalreza29@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+    if(name == "" && email == "" && message == "") {
+      alert("Form must filled")
+      setLoading(false);
+    } else {
+      emailjs.send(
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: form.name,
+            to_name: "Feizal Reza",
+            from_email: form.email,
+            to_email: "feizalreza29@gmail.com",
+            message: form.message,
+          },
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert("Thank you. I will get back to you as soon as possible.");
+  
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+  
+            alert("something went wrong. Please try again.");
+          }
+        );
+    }
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("something went wrong. Please try again.");
-        }
-      );
   };
 
   return (

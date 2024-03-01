@@ -21,7 +21,8 @@ import {
     php,
     mysql,
     burjo,
-    ytclone
+    ytclone,
+    boking_app
   } from "../assets";
   
   export const navLinks = [
@@ -139,6 +140,19 @@ import {
   
 
   const projects = [
+    {
+      name: "Booking-App",
+      description:
+        "web-based applications created using react Ts, Tailwind, React-hook-form, React-query",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: boking_app,
+      source_code_link: "https://github.com/Erzeed/book-futsallapp-MERN",
+    },
     {
       name: "Yt-clone",
       description:

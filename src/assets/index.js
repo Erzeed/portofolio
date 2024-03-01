@@ -31,6 +31,7 @@ import wgether from "./wgther.png";
 import notes from "./notes.png";
 import burjo from "./burjo.png";
 import ytclone from "./ytclone.png";
+import boking_app from "./boking_app.png";
 
 export {
   logo,
@@ -59,5 +60,6 @@ export {
   burjo,
   lottie,
   loading,
-  ytclone
+  ytclone,
+  boking_app
 };
