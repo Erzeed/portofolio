@@ -22,7 +22,8 @@ import {
     mysql,
     burjo,
     ytclone,
-    boking_app
+    boking_app,
+    ai_assist
   } from "../assets";
   
   export const navLinks = [
@@ -141,14 +142,35 @@ import {
 
   const projects = [
     {
-      name: "Booking-App",
+      name: "Ai-Assist",
       description:
-        "web-based applications created using react Ts, Tailwind, React-hook-form, React-query",
+        "web-based applications created using react Ts, Tailwind, Formik, React-query, Express Js",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
+        {
+          name: "Express Js",
+          color: "green-text-gradient",
+        }
+      ],
+      image: ai_assist,
+      source_code_link: "https://github.com/Erzeed/AI-MERN",
+    },
+    {
+      name: "Booking-App",
+      description:
+        "web-based applications created using react Ts, Tailwind, React-hook-form, React-query, Express Js",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Express Js",
+          color: "green-text-gradient",
+        }
       ],
       image: boking_app,
       source_code_link: "https://github.com/Erzeed/book-futsallapp-MERN",

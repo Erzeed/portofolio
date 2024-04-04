@@ -32,6 +32,7 @@ import notes from "./notes.png";
 import burjo from "./burjo.png";
 import ytclone from "./ytclone.png";
 import boking_app from "./boking_app.png";
+import ai_assist from "./ai.webp";
 
 export {
   logo,
@@ -61,5 +62,6 @@ export {
   lottie,
   loading,
   ytclone,
-  boking_app
+  boking_app,
+  ai_assist
 };
